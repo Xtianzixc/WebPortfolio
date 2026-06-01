@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Index / Website Directory</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        /* Search Bar */
+        .search-container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .search-bar {
+            width: 100%;
+            max-width: 500px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-bar:focus {
+            border-color: #3498db;
+        }
+
+        /* Grid Layout */
+        .index-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* Card Styles */
+        .category-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-title {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        /* Link List Styles */
+        .link-list {
+            list-style: none;
+        }
+
+        .link-item {
+            margin-bottom: 12px;
+        }
+
+        .link-item a {
+            color: #34495e;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .link-item a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+
+        .link-description {
+            display: block;
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            margin-top: 2px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Website Index</h1>
+            <p>Main directory and site navigation</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search pages...">
+        </div>
+
+        <main class="index-grid">
+            <section class="category-card">
+                <h2 class="category-title">Core Pages</h2>
+                <ul class="link-list">
